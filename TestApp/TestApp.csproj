@@ -64,6 +64,34 @@
     <Compile Include="Migrations\201911280839300_InitialModel1.designer.cs">
       <DependentUpon>201911280839300_InitialModel1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911281028086_DeleteSupplierId.cs" />
+    <Compile Include="Migrations\201911281028086_DeleteSupplierId.designer.cs">
+      <DependentUpon>201911281028086_DeleteSupplierId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911281031066_Supplier.cs" />
+    <Compile Include="Migrations\201911281031066_Supplier.designer.cs">
+      <DependentUpon>201911281031066_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911281114281_AddYardInMachine.cs" />
+    <Compile Include="Migrations\201911281114281_AddYardInMachine.designer.cs">
+      <DependentUpon>201911281114281_AddYardInMachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911281141270_AddProductQuantityTable.cs" />
+    <Compile Include="Migrations\201911281141270_AddProductQuantityTable.designer.cs">
+      <DependentUpon>201911281141270_AddProductQuantityTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911281158012_DeleteProductQuantityTable.cs" />
+    <Compile Include="Migrations\201911281158012_DeleteProductQuantityTable.designer.cs">
+      <DependentUpon>201911281158012_DeleteProductQuantityTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911281211561_DrlrtrmanymanyYardProd.cs" />
+    <Compile Include="Migrations\201911281211561_DrlrtrmanymanyYardProd.designer.cs">
+      <DependentUpon>201911281211561_DrlrtrmanymanyYardProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911281218274_AddYardProdQuantityTable.cs" />
+    <Compile Include="Migrations\201911281218274_AddYardProdQuantityTable.designer.cs">
+      <DependentUpon>201911281218274_AddYardProdQuantityTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +107,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911280839300_InitialModel1.resx">
       <DependentUpon>201911280839300_InitialModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911281028086_DeleteSupplierId.resx">
+      <DependentUpon>201911281028086_DeleteSupplierId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911281031066_Supplier.resx">
+      <DependentUpon>201911281031066_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911281114281_AddYardInMachine.resx">
+      <DependentUpon>201911281114281_AddYardInMachine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911281141270_AddProductQuantityTable.resx">
+      <DependentUpon>201911281141270_AddProductQuantityTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911281158012_DeleteProductQuantityTable.resx">
+      <DependentUpon>201911281158012_DeleteProductQuantityTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911281211561_DrlrtrmanymanyYardProd.resx">
+      <DependentUpon>201911281211561_DrlrtrmanymanyYardProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911281218274_AddYardProdQuantityTable.resx">
+      <DependentUpon>201911281218274_AddYardProdQuantityTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

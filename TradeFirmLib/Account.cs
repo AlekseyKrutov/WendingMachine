@@ -31,6 +31,7 @@ namespace TradeFirmLib
         {
             this.Right = Right;
             this.Login = CreateLogin(Employee);
+            this.ActiveFlag = true;
             this.Password = CreatePassword();
         }
         private string CreateLogin(Employee emp) => emp.Name.Split(' ').First() + "_" + emp.Id;

@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TradeFirmLib
 {
@@ -22,6 +20,7 @@ namespace TradeFirmLib
         public DateTime LastRepairDate { get; set; }
         public DateTime LastActivityDate { get; set; }
         public Employee LastOperator { get; set; }
+        public Yard Yard { get; set; }
         public float CashSum { get; set; }
         public List<float> CashInMachine { get; }
         public List<float> PaymentBuffer { get; }

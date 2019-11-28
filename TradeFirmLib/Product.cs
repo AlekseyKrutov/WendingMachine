@@ -17,8 +17,6 @@ namespace TradeFirmLib
         public ProductType ProductType { get; set; }
         public decimal Cost { get; set; }
         public bool ActiveFlag { get; set; }
-        public int Quantity { get; set; }
-        public IList<Yard> Yards{ get; set; }
         public Product(string ProductName, Supplier Supplier, Supply Supply,
             ProductType ProductType, decimal Cost, bool AddTax = false)
         {
@@ -33,6 +31,9 @@ namespace TradeFirmLib
         {
             return p.Supply.SupplyDate.AddDays(p.ProductType.ShiftLifeDays);
         }
-
+        public void DeactivateProduct()
+        {
+            this.ActiveFlag = false;
+        }
     }
 }

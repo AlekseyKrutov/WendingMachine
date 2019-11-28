@@ -21,6 +21,7 @@ namespace TradeFirmLib
             this.Name = Name;
             this.Inn = Inn;
             this.Post = Post;
+            this.ActiveFlag = true;
             Account = new Account(this, Right);
         }
         public void Deactivate()

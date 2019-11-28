@@ -14,14 +14,8 @@ namespace TestApp
         {
             using (UserContext uc = new UserContext())
             {
-                ProductType pt1 = new ProductType(ProductTypes.Vegetables, 30);
-
-                uc.ProductsType.Add(pt1);
-                uc.SaveChanges();
-                var types = uc.ProductsType;
-                foreach (ProductType pt in types)
+                using (UserContext us = new UserContext())
                 {
-                    Console.WriteLine($"{pt.TypeName}");
                 }
             }
             Console.ReadLine();

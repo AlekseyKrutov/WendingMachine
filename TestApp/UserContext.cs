@@ -22,6 +22,6 @@ namespace TestApp
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<SystemOwner> SystemOwners { get; set; }
         public DbSet<Yard> Yards { get; set; }
-
+        //public DbSet<ProductQuantity> ProductQuantities { get; set; }
     }
 }

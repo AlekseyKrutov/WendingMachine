@@ -9,7 +9,6 @@ namespace TradeFirmLib
 {
     public class Supplier : Company
     {
-        public int Id { get; set; }
         public string Director { get; set; }
         // public Contract Contract { get; set; }
         public Supplier(string Director, string CompanyName, string Inn, string Address)

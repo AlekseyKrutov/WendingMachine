@@ -12,8 +12,8 @@ namespace TradeFirmLib
         public int Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
-        public IList<Product> Products { get; set; }
-        public Yard(string Name, string Address, List<Product> Products)
+        public IList<ProductQuantity> Products { get; set; }
+        public Yard(string Name, string Address, List<ProductQuantity> Products)
         {
             this.Name = Name;
             this.Address = Address;
