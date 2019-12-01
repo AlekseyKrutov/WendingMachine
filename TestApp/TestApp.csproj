@@ -92,6 +92,58 @@
     <Compile Include="Migrations\201911281218274_AddYardProdQuantityTable.designer.cs">
       <DependentUpon>201911281218274_AddYardProdQuantityTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911291359557_AddActiveFlags.cs" />
+    <Compile Include="Migrations\201911291359557_AddActiveFlags.designer.cs">
+      <DependentUpon>201911291359557_AddActiveFlags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911291427293_AddLoginInAccount.cs" />
+    <Compile Include="Migrations\201911291427293_AddLoginInAccount.designer.cs">
+      <DependentUpon>201911291427293_AddLoginInAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911300802116_CorrectSupply.cs" />
+    <Compile Include="Migrations\201911300802116_CorrectSupply.designer.cs">
+      <DependentUpon>201911300802116_CorrectSupply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911300827525_DeleteProductPKInQuantity.cs" />
+    <Compile Include="Migrations\201911300827525_DeleteProductPKInQuantity.designer.cs">
+      <DependentUpon>201911300827525_DeleteProductPKInQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911300839255_DeleteFieldsFromproduct.cs" />
+    <Compile Include="Migrations\201911300839255_DeleteFieldsFromproduct.designer.cs">
+      <DependentUpon>201911300839255_DeleteFieldsFromproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911300847112_AddSupplyInQP.cs" />
+    <Compile Include="Migrations\201911300847112_AddSupplyInQP.designer.cs">
+      <DependentUpon>201911300847112_AddSupplyInQP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911300851220_AddSupplyInQP1.cs" />
+    <Compile Include="Migrations\201911300851220_AddSupplyInQP1.designer.cs">
+      <DependentUpon>201911300851220_AddSupplyInQP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911300921167_DelSupplyFromPQ.cs" />
+    <Compile Include="Migrations\201911300921167_DelSupplyFromPQ.designer.cs">
+      <DependentUpon>201911300921167_DelSupplyFromPQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911300923141_AddSupplyFromPQ.cs" />
+    <Compile Include="Migrations\201911300923141_AddSupplyFromPQ.designer.cs">
+      <DependentUpon>201911300923141_AddSupplyFromPQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911301003186_AddSupplies.cs" />
+    <Compile Include="Migrations\201911301003186_AddSupplies.designer.cs">
+      <DependentUpon>201911301003186_AddSupplies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911301050322_AddRealCostInPQ.cs" />
+    <Compile Include="Migrations\201911301050322_AddRealCostInPQ.designer.cs">
+      <DependentUpon>201911301050322_AddRealCostInPQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911301104218_AddPQ.cs" />
+    <Compile Include="Migrations\201911301104218_AddPQ.designer.cs">
+      <DependentUpon>201911301104218_AddPQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912011503486_AddPaymentTable.cs" />
+    <Compile Include="Migrations\201912011503486_AddPaymentTable.designer.cs">
+      <DependentUpon>201912011503486_AddPaymentTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,6 +180,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911281218274_AddYardProdQuantityTable.resx">
       <DependentUpon>201911281218274_AddYardProdQuantityTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911291359557_AddActiveFlags.resx">
+      <DependentUpon>201911291359557_AddActiveFlags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911291427293_AddLoginInAccount.resx">
+      <DependentUpon>201911291427293_AddLoginInAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911300802116_CorrectSupply.resx">
+      <DependentUpon>201911300802116_CorrectSupply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911300827525_DeleteProductPKInQuantity.resx">
+      <DependentUpon>201911300827525_DeleteProductPKInQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911300839255_DeleteFieldsFromproduct.resx">
+      <DependentUpon>201911300839255_DeleteFieldsFromproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911300847112_AddSupplyInQP.resx">
+      <DependentUpon>201911300847112_AddSupplyInQP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911300851220_AddSupplyInQP1.resx">
+      <DependentUpon>201911300851220_AddSupplyInQP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911300921167_DelSupplyFromPQ.resx">
+      <DependentUpon>201911300921167_DelSupplyFromPQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911300923141_AddSupplyFromPQ.resx">
+      <DependentUpon>201911300923141_AddSupplyFromPQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911301003186_AddSupplies.resx">
+      <DependentUpon>201911301003186_AddSupplies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911301050322_AddRealCostInPQ.resx">
+      <DependentUpon>201911301050322_AddRealCostInPQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911301104218_AddPQ.resx">
+      <DependentUpon>201911301104218_AddPQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912011503486_AddPaymentTable.resx">
+      <DependentUpon>201912011503486_AddPaymentTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

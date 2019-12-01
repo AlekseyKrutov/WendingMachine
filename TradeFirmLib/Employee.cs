@@ -16,6 +16,7 @@ namespace TradeFirmLib
         public Posts Post { get; set; }
         public bool ActiveFlag { get; set; }
         public Account Account { get; set; }
+        public Employee() { }
         public Employee(string Name, string Inn, Posts Post, Rights Right = Rights.Guest)
         {
             this.Name = Name;

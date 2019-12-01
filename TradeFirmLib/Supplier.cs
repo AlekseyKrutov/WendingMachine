@@ -11,6 +11,7 @@ namespace TradeFirmLib
     {
         public string Director { get; set; }
         // public Contract Contract { get; set; }
+        public Supplier() { }
         public Supplier(string Director, string CompanyName, string Inn, string Address)
             : base (CompanyName, Inn, Address)
         {

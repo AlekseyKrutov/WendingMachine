@@ -18,10 +18,18 @@ namespace TestApp
         public DbSet<Machine> Machines { get; set; }
         public DbSet<MachineYard> MachineYards { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductQuantity> ProductsQuantity { get; set; }
         public DbSet<ProductType> ProductsType { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Supply> Supplies { get; set; }
         public DbSet<SystemOwner> SystemOwners { get; set; }
         public DbSet<Yard> Yards { get; set; }
-        //public DbSet<ProductQuantity> ProductQuantities { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+        }
     }
+
 }

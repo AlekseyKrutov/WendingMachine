@@ -53,10 +53,12 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Company.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Contract.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Machine.cs" />
     <Compile Include="MachineYard.cs" />
+    <Compile Include="Payment.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductQuantity.cs" />
     <Compile Include="ProductType.cs" />

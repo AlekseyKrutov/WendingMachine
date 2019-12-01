@@ -12,12 +12,15 @@ namespace TradeFirmLib
         public int Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
+        public bool ActiveFlag { get; set; }
         public IList<ProductQuantity> Products { get; set; }
+        public Yard() { }
         public Yard(string Name, string Address, List<ProductQuantity> Products)
         {
             this.Name = Name;
             this.Address = Address;
             this.Products = Products;
+            this.ActiveFlag = true;
         }
         virtual public void PushProduct(Product product) { }
         virtual public void PushProducts(List<Product> products) { }

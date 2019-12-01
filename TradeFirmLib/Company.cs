@@ -13,11 +13,14 @@ namespace TradeFirmLib
         public string CompanyName { get; set; }
         public string Inn { get; set; }
         public string Address { get; set; }
+        public bool ActiveFlag { get; set; }
+        public Company() {}
         public Company(string CompanyName, string Inn, string Address)
         {
             this.CompanyName = CompanyName;
             this.Inn = Inn;
             this.Address = Address;
+            this.ActiveFlag = true;
         }
     }
 }

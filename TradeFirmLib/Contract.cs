@@ -19,6 +19,7 @@ namespace TradeFirmLib
             this.Supplier = Supplier;
             this.ConfirmDate = (ConfirmDate == null) ? DateTime.Now : (DateTime) ConfirmDate;
             this.FinishDate = (FinishDate == null) ? DateTime.Now.AddDays(1): (DateTime)FinishDate;
+            this.ActiveFlag = true;
         }
         public void CancelContract()
         {

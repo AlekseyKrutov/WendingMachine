@@ -10,6 +10,7 @@ namespace TradeFirmLib
     public class SystemOwner : Company
     {
         public Employee Director { get; set; }
+        public SystemOwner() { }
         public SystemOwner(Employee Director, string CompanyName, string Inn, string Address)
             : base (CompanyName, Inn, Address)
         {

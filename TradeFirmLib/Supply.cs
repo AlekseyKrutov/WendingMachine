@@ -14,19 +14,40 @@ namespace TradeFirmLib
         public DateTime SupplyDate { get; set; }
         public bool ActiveFlag { get; set; }
         public Employee StockMan { get; set; }
-        public IList<Product> Products { get; set; }
-        public Supply(Supplier Supplier, Employee StockMan, 
-            List<Product> Products, DateTime? SupplyDate = null)
+        public IList<ProductQuantity> Products { get; set; }
+        public Supply() { }
+        public Supply(Supplier Supplier, Employee StockMan, DateTime? SupplyDate = null)
         {
             this.Supplier = Supplier;
             this.StockMan = StockMan;
             this.ActiveFlag = true;
-            this.Products = Products;
-            this.SupplyDate = (SupplyDate == null) ? DateTime.Now : (DateTime) SupplyDate;
+            this.SupplyDate = (SupplyDate == null) ? DateTime.Now : (DateTime)SupplyDate;
         }
-        public void CloseSupply() { }
-        public void CancelSupply() { }
-        public void PayOffSupply() { }
+        public Supply(Supplier Supplier, Employee StockMan, 
+            List<ProductQuantity> Products, DateTime? SupplyDate) : this(Supplier, StockMan, SupplyDate)
+        {
+            this.Products = Products;
+        }
+        public void CloseSupply(Yard yard) 
+        {
+            this.ActiveFlag = false;
+            foreach (ProductQuantity pq in Products)
+            {
+                yard.Products.Add(pq);
+                pq.Supply = this;
+            }
+        }
+        public void CancelSupply()
+        {
+            if (!ActiveFlag)
+                return;
+            ActiveFlag = false;
+            Products.Clear();
+        }
+        public Payment PayOffSupply(Employee Operator)
+        {
+            return new Payment(Operator, this);
+        }
         public void SupplyProductsInMachine() { }
     }
 }

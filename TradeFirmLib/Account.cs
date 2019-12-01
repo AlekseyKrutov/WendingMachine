@@ -24,9 +24,10 @@ namespace TradeFirmLib
         public int Id { get; set; }
         public Employee Employee { get; set; }
         public Rights Right { get; set; }
-        public string Login { get; }
+        public string Login { get; set; }
         public string Password { get; set; }
         public bool ActiveFlag { get; set; }
+        public Account() { }
         public Account(Employee Employee, Rights Right)
         {
             this.Right = Right;

@@ -34,6 +34,7 @@ namespace TradeFirmLib
             this.SerialNumber = sNumber;
             this.Location = Location;
             this.CashInMachine = CashInMachine;
+            this.ActiveFlag = true;
         }
         public void ChangeMachine(Machine machine) { }
         public void CancelBuying() { }
