@@ -7,6 +7,11 @@ using System.Data.Entity;
 
 namespace TradeFirmLib
 {
+    public struct MachineProduct
+    {
+        public string NameProd { get; set; }
+        public decimal Cost { get; set; }
+    }
     public class Machine
     {
         public int Id { get; set; }
@@ -17,15 +22,15 @@ namespace TradeFirmLib
         public string SerialNumber { get; set; }
         public string Location { get; set; }
         public bool ActiveFlag { get; set; }
+        public List<MachineProduct> Products { get; set; } = new List<MachineProduct>();
         public DateTime LastRepairDate { get; set; }
         public DateTime LastActivityDate { get; set; }
         public Employee LastOperator { get; set; }
-        public Yard Yard { get; set; }
-        public float CashSum { get; set; }
-        public List<float> CashInMachine { get; }
-        public List<float> PaymentBuffer { get; }
+        public double CashSum { get; set; }
+        public List<double> PaymentBuffer { get; set; } = new List<double>();
+        public Machine() { }
         public Machine(int Columns, int Rows, string Firm, string Model,
-                        string sNumber, string Location, List<float> CashInMachine)
+                        string sNumber, string Location) : this()
         {
             this.Columns = Columns;
             this.Rows = Rows;
@@ -33,12 +38,44 @@ namespace TradeFirmLib
             this.Model = Model;
             this.SerialNumber = sNumber;
             this.Location = Location;
-            this.CashInMachine = CashInMachine;
             this.ActiveFlag = true;
+            this.LastRepairDate = DateTime.Now;
+            this.LastActivityDate = DateTime.Now;
         }
-        public void ChangeMachine(Machine machine) { }
-        public void CancelBuying() { }
-        public bool BuyProduct(Product product) => true;
-        public List<float> GiveChange() => new List<float>();
+        public void CancelBuying()
+        {
+            
+        }
+        public bool FillProducts(List<ProductYard> products)
+        {
+            if (products.Count > Rows * Columns)
+                return false;
+            for (int i = 0; i < products.Count; i++)
+            {
+                ProductQuantity pq = products[i].Supply.Products
+                    .Single(p => p.Product == products[i].Product);
+                Products.Add(new MachineProduct { NameProd = pq.Product.ProductName,
+                Cost = pq.Cost});
+            }
+            return true;
+        }
+        public void AddMoney(double money)
+        {
+            PaymentBuffer.Add(money);
+        }
+        public bool BuyProduct(int index) 
+        {
+            double Discharge = 0;
+            Discharge = PaymentBuffer.Sum() - (double)Products[index].Cost;
+            if (CashSum - Discharge < 0)
+            {
+                Discharge = 0;
+                return false;
+            }
+            CashSum += PaymentBuffer.Sum();
+            Products.RemoveAt(index);
+            CashSum -= Discharge;
+            return true;
+        }
     }
 }

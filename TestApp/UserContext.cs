@@ -25,7 +25,7 @@ namespace TestApp
         public DbSet<SystemOwner> SystemOwners { get; set; }
         public DbSet<Yard> Yards { get; set; }
         public DbSet<Payment> Payments { get; set; }
-
+        public DbSet<ProductYard> ProductYards { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

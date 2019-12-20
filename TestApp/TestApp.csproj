@@ -144,6 +144,38 @@
     <Compile Include="Migrations\201912011503486_AddPaymentTable.designer.cs">
       <DependentUpon>201912011503486_AddPaymentTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912030844487_ChangeSuppliertoCompany.cs" />
+    <Compile Include="Migrations\201912030844487_ChangeSuppliertoCompany.designer.cs">
+      <DependentUpon>201912030844487_ChangeSuppliertoCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912030926398_SetIdentityOnPq.cs" />
+    <Compile Include="Migrations\201912030926398_SetIdentityOnPq.designer.cs">
+      <DependentUpon>201912030926398_SetIdentityOnPq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912030928107_SetIdentityOnPq1.cs" />
+    <Compile Include="Migrations\201912030928107_SetIdentityOnPq1.designer.cs">
+      <DependentUpon>201912030928107_SetIdentityOnPq1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912031027247_DelPq.cs" />
+    <Compile Include="Migrations\201912031027247_DelPq.designer.cs">
+      <DependentUpon>201912031027247_DelPq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912031036170_AddPqTable.cs" />
+    <Compile Include="Migrations\201912031036170_AddPqTable.designer.cs">
+      <DependentUpon>201912031036170_AddPqTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912031557252_AddProdYardTable.cs" />
+    <Compile Include="Migrations\201912031557252_AddProdYardTable.designer.cs">
+      <DependentUpon>201912031557252_AddProdYardTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912040944192_DeletePqYardTable.cs" />
+    <Compile Include="Migrations\201912040944192_DeletePqYardTable.designer.cs">
+      <DependentUpon>201912040944192_DeletePqYardTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912041141350_DeleteYardFromMachine.cs" />
+    <Compile Include="Migrations\201912041141350_DeleteYardFromMachine.designer.cs">
+      <DependentUpon>201912041141350_DeleteYardFromMachine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -219,6 +251,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912011503486_AddPaymentTable.resx">
       <DependentUpon>201912011503486_AddPaymentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912030844487_ChangeSuppliertoCompany.resx">
+      <DependentUpon>201912030844487_ChangeSuppliertoCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912030926398_SetIdentityOnPq.resx">
+      <DependentUpon>201912030926398_SetIdentityOnPq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912030928107_SetIdentityOnPq1.resx">
+      <DependentUpon>201912030928107_SetIdentityOnPq1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912031027247_DelPq.resx">
+      <DependentUpon>201912031027247_DelPq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912031036170_AddPqTable.resx">
+      <DependentUpon>201912031036170_AddPqTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912031557252_AddProdYardTable.resx">
+      <DependentUpon>201912031557252_AddProdYardTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912040944192_DeletePqYardTable.resx">
+      <DependentUpon>201912040944192_DeletePqYardTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912041141350_DeleteYardFromMachine.resx">
+      <DependentUpon>201912041141350_DeleteYardFromMachine.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

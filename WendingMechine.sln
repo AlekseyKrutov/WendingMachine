@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WendingMechine", "WendingMechine\WendingMechine.csproj", "{CBAE1199-880C-4257-BFF0-D1EF4E425C8F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73829C21-F073-4096-8E1C-592642477E07} = {73829C21-F073-4096-8E1C-592642477E07}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeFirmLib", "TradeFirmLib\TradeFirmLib.csproj", "{73829C21-F073-4096-8E1C-592642477E07}"
 EndProject

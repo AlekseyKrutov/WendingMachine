@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TradeFirmLib.Employee">
+    <Position X="15.75" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAAQAAAAAAAAQACAAAAAAAAAAAAAAAAGA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Account">
+    <Position X="13" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAQAgQAAAAAAAAAAqAAAAAACAACQAAAAAAA=</HashCode>
+      <FileName>Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Company">
+    <Position X="14.5" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAQAAAAAAAAAAAAAAAAACAAAAAAAAACA=</HashCode>
+      <FileName>Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Constants">
+    <Position X="8.75" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Contract">
+    <Position X="17.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAACAYAAAAAAAAAAAAAAAAACAAAAAAAAACA=</HashCode>
+      <FileName>Contract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Machine">
+    <Position X="9" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQCAgCAAAAAAUAAQBIAAAAAAQMEBAQAAAgAAAgAAAQ=</HashCode>
+      <FileName>Machine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.MachineYard">
+    <Position X="5.75" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAACEAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MachineYard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Payment">
+    <Position X="5.5" Y="9" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAAAAAAAAAAABAAAAAAAAAAAAAAJAA=</HashCode>
+      <FileName>Payment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Product">
+    <Position X="11.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAAAAAQAAAAAABAAAAAgAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.ProductQuantity">
+    <Position X="4" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAIAAAAAAAAAAAABAAAAAAAAAAAAAAgAAABAA=</HashCode>
+      <FileName>ProductQuantity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.ProductType">
+    <Position X="10" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAQAAEAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Supplier">
+    <Position X="17" Y="1.25" Width="2.25" />
+    <InheritanceLine Type="TradeFirmLib.Company" ManuallyRouted="true">
+      <Path>
+        <Point X="16.75" Y="2.188" />
+        <Point X="17" Y="2.188" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Supplier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Supply">
+    <Position X="13" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCQAAAAABAYAAAAAIAAAAAAAAAABAAAAAAAABAAQ=</HashCode>
+      <FileName>Supply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.SystemOwner">
+    <Position X="14.25" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemOwner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradeFirmLib.Yard">
+    <Position X="7.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAQCAAAAAAAQEAAAAAAACAAAAAAAAAAQ=</HashCode>
+      <FileName>Yard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="TradeFirmLib.Posts">
+    <Position X="11.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TradeFirmLib.Rights">
+    <Position X="18.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAEAAAg=</HashCode>
+      <FileName>Account.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TradeFirmLib.ProductTypes">
+    <Position X="12.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAIIAAA=</HashCode>
+      <FileName>ProductType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

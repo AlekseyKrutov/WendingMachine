@@ -17,7 +17,6 @@ namespace TradeFirmLib
         public decimal Cost { get; set; }
         //стоимость с налогами
         public decimal RealCost { get; set; }
-        public IList<Yard> Yards{ get; set; }
         public ProductQuantity() {}
         public ProductQuantity(Product Product, int Quantity, decimal Cost)
         {
@@ -26,11 +25,10 @@ namespace TradeFirmLib
             this.Cost = Cost / Quantity;
             this.RealCost = this.Cost + (this.Cost * (decimal) Constants.Tax) + (this.Cost * (decimal)Constants.AddingPercentage);
         }
-        public ProductQuantity(Product Product, int Quantity, decimal Cost, Supply Supply, List<Yard> Yards)
+        public ProductQuantity(Product Product, int Quantity, decimal Cost, Supply Supply)
             : this(Product, Quantity, Cost)
         {
-            this.Supply = Supply;
-            this.Yards = Yards;
+            this.Supply = Supply;;
         }
     }
 }

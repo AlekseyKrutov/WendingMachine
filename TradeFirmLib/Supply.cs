@@ -10,13 +10,13 @@ namespace TradeFirmLib
     public class Supply
     {
         public int Id { get; set; }
-        public Supplier Supplier { get; set; }
+        public Company Supplier { get; set; }
         public DateTime SupplyDate { get; set; }
         public bool ActiveFlag { get; set; }
         public Employee StockMan { get; set; }
         public IList<ProductQuantity> Products { get; set; }
         public Supply() { }
-        public Supply(Supplier Supplier, Employee StockMan, DateTime? SupplyDate = null)
+        public Supply(Company Supplier, Employee StockMan, DateTime? SupplyDate = null)
         {
             this.Supplier = Supplier;
             this.StockMan = StockMan;
@@ -33,8 +33,17 @@ namespace TradeFirmLib
             this.ActiveFlag = false;
             foreach (ProductQuantity pq in Products)
             {
-                yard.Products.Add(pq);
-                pq.Supply = this;
+                yard.AddProductInYard(pq, this);
+            }
+        }
+        public void CloseSupply(MachineYard yard, Yard fromYard)
+        {
+            List<ProductYard> newProdInYard = new List<ProductYard>();
+            this.ActiveFlag = false;
+            foreach (ProductQuantity pq in Products)
+            {
+                yard.AddProductInYard(pq, this);
+                fromYard.DeleteProductFromyYard(pq);
             }
         }
         public void CancelSupply()
@@ -48,6 +57,5 @@ namespace TradeFirmLib
         {
             return new Payment(Operator, this);
         }
-        public void SupplyProductsInMachine() { }
     }
 }

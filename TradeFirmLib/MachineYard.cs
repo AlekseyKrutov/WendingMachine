@@ -10,21 +10,12 @@ namespace TradeFirmLib
 {
     public class MachineYard : Yard
     {
-        public MachineYard() { }
         public Machine Machine { get; set; }
-        public MachineYard(List<ProductQuantity> Products, Machine Machine) : 
-            base(Machine.Model, Machine.Location, Products)
+        public MachineYard() { }
+        public MachineYard( Machine Machine) : 
+            base(Machine.Model, Machine.Location)
         {
-
-        }
-        public override void PopProduct(Product product)
-        {
-            base.PopProduct(product);
-        }
-        public override void PushProduct(Product product)
-        {
-            
-            base.PushProduct(product);
+            this.Machine = Machine;
         }
         public override void PopProducts(List<Product> products)
         {
